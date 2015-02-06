@@ -33,10 +33,14 @@ h2.selfie {
   max-width: 300px;
   height: 300px;
   text-indent: -9999px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border: none;
+  // -webkit-border-radius: 50%;
+  // -moz-border-radius: 50%;
+  // border-radius: 50%;
+  // border: none;
+}
+
+#what-i-do {
+  background-color: #B4D8D1;
 }
 /*body.wrapper {
   max-width: 1200px;
