@@ -41,6 +41,14 @@
   height: auto;
   margin: 0 auto ;
 }
+body {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: #28B698;
+  font-family: special_eliteregular;
+  font-size: 1.5em;
+}
+
 h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 5em;
@@ -56,12 +64,6 @@ h2 {
 h3 {
   margin: 0 0 20px 0;
   font-size: 26px;
-}
-
-body {
-  background-color: #28B698;
-  font-family: special_eliteregular;
-  font-size: 1.5em;
 }
 
 p {
@@ -120,8 +122,6 @@ img#selfie {
   margin: 2em;
 }
 
-
-
 .centralize {
   text-align: center;
 }
@@ -140,6 +140,66 @@ ul.do-icons li {
   text-align: center;
   margin: 0 auto;
 }
+
+.skill-set {
+  margin: 0 10px 20px 20px;
+  position: relative;
+  display: inline-block;
+  background: #ffffff;
+  height: 100px;
+  width: 100px;
+  border: 4px #28B698 solid;
+}
+
+#photoshop-level {
+  background-color: #B4D8D1;
+  height: 92px;
+  width: 85px;
+}
+
+#illustrator-level {
+  background-color: #B4D8D1;
+  height: 92px;
+  width: 75px;
+}
+
+#lightroom-level {
+  background-color: #B4D8D1;
+  height: 92px;
+  width: 70px;
+}
+
+#premier-level {
+  background-color: #B4D8D1;
+  height: 92px;
+  width: 50px;
+}
+
+.skill-name {
+  font-size: 3em;
+  color: #28B799;
+  // text-shadow: -1px 2px 0px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ul.code-set {
+  list-style: none;
+  font-size: 1.5em;
+  color: #ffffff;
+  margin: 0px auto;
+  padding: 0px;
+  text-align: right;
+}
+
+ul.social > li {
+  list-style: none;
+  display: inline;
+  margin-left: 5px;
+}
+
 /*body.wrapper {
   max-width: 1200px;
   margin: auto;

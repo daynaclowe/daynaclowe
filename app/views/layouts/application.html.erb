@@ -10,11 +10,11 @@
 </head>
 <body class="container">
   <div class="row">
-    <div class="col-lg-4">
+    <div class="col-sm-7 col-md-6 col-lg-4">
       <h1>Dayna Lowe</h1>
       <h3>Web Developer and Designer</h3>
     </div>
-    <div class="col-lg-8">
+    <div class="col-sm-5 col-md-6 col-lg-8">
         <ul class="nav navbar-nav">
           <li class="category"><%= link_to "About Me", root_path %></li>
           <li class="category"><%= link_to "Portfolio", portfolio_path %></li>
@@ -38,12 +38,12 @@
 <%= yield %>
 
 <footer>
-  <ul>
+  <ul class="social">
+    <li class="sign_in">Admin Login</li>
     <li class="social"><a href="https://twitter.com/idratherexplode">Twitter</a></li>
     <li class="social"><a href="">Instagram</a></li>
     <li class="social"><a href="">Github</a></li>
     <li class="social"><a href="">Behance</a></li>
-    <li class="sign_in">Admin Login</li>
   </ul>
 </footer>
 </body>
