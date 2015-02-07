@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Website</title>
+  <title>daynaclowe.com</title>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body class="container">
-<nav class="navbar navbar-default">
-    <div id="logo">
-      <% link_to root_path do %>
-        <%= image_tag "logo.png" %>
-      <% end %>
+  <div class="row">
+    <div class="col-lg-4">
+      <h1>Dayna Lowe</h1>
+      <h3>Web Developer and Designer</h3>
     </div>
-    <div id="example-navbar-collapse" class="collapse navbar-collapse" >
-      <ul class="nav navbar-nav">
-        <li class="category"><%= link_to "About Me", root_path %></li>
-        <li class="category"><%= link_to "Portfolio", portfolio_path %></li>
-        <li class="category"><%= link_to "Blog", posts_path %></li>
-        <li class="category"><%= link_to "Contact", contact_path %></li>
-      </ul>
+    <div class="col-lg-8">
+        <ul class="nav navbar-nav">
+          <li class="category"><%= link_to "About Me", root_path %></li>
+          <li class="category"><%= link_to "Portfolio", portfolio_path %></li>
+          <li class="category"><%= link_to "Blog", posts_path %></li>
+          <li class="category"><%= link_to "Contact", contact_path %></li>
+        </ul>
     </div>
-</nav>
+  </div>
 
-<div id="main_content">
+<!-- <div id="main_content">
   <div id="header">
     <% if current_page?(root_path) %>
       <p>About</p>
@@ -33,15 +33,7 @@
     <% else %>
       <p><%= link_to "Back to All Posts", posts_path %></p>
     <% end  %>
-    <div id="buttons">
-      <%= link_to "New Post", new_post_path %>
-      <button class="button">Log Out</button>
-    </div>
-  </div>
-  <% flash.each do |name, msg| %>
-  <%= content_tag(:div, msg, class: "alert") %>
-  <% end %>
-</div>
+</div> -->
 
 <%= yield %>
 
