@@ -4,25 +4,36 @@
   <title>daynaclowe.com</title>
   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="stylesheets.css.scss" type="text/css" charset="utf-8" />
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body class="container">
   <div class="row">
-    <div class="col-sm-7 col-md-6 col-lg-4">
-      <h1>Dayna Lowe</h1>
-      <h3>Web Developer and Designer</h3>
-    </div>
-    <div class="col-sm-5 col-md-6 col-lg-8">
-        <ul class="nav navbar-nav">
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"> </a>
+      <button class="navbar-toggle" data-toggle="collapse" data-targe= ".navHeaderCollapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse navHeaderCollapse">
+        <ul class="nav navbar-nav navbar-right">
           <li class="category"><%= link_to "About Me", root_path %></li>
           <li class="category"><%= link_to "Portfolio", portfolio_path %></li>
           <li class="category"><%= link_to "Blog", posts_path %></li>
           <li class="category"><%= link_to "Contact", contact_path %></li>
         </ul>
+      </div>
     </div>
   </div>
+  </div>
+  <div class="row">
+    <h1>Dayna Lowe</h1>
+    <h3>Web Developer and Designer</h3>
+  </div>
+
 
 <!-- <div id="main_content">
   <div id="header">
@@ -35,11 +46,20 @@
     <% end  %>
 </div> -->
 
+<!-- <p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p> -->
 <%= yield %>
 
 <footer>
   <ul class="social">
-    <li class="sign_in">Admin Login</li>
+    <li>
+      <% if !user_signed_in? %>
+      <%= link_to "Admin Login", new_user_session_path %>
+      <% end %>
+      <% if user_signed_in? %>
+      <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+      <% end %>
+    </li>
     <li class="social"><a href="https://twitter.com/idratherexplode">Twitter</a></li>
     <li class="social"><a href="">Instagram</a></li>
     <li class="social"><a href="">Github</a></li>
