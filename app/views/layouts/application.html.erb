@@ -8,49 +8,43 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class="container">
+<div class="container">
   <div class="row">
-  <div class="navbar navbar-inverse navbar-static-top">
-    <div class="container">
-      <a class="navbar-brand" href="#"> </a>
-      <button class="navbar-toggle" data-toggle="collapse" data-targe= ".navHeaderCollapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="collapse navbar-collapse navHeaderCollapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="category"><%= link_to "About Me", root_path %></li>
-          <li class="category"><%= link_to "Portfolio", portfolio_path %></li>
-          <li class="category"><%= link_to "Blog", posts_path %></li>
-          <li class="category"><%= link_to "Contact", contact_path %></li>
-        </ul>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"> </a>
+        <button class="navbar-toggle" data-toggle="collapse" data-target= ".navHeaderCollapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse navHeaderCollapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="category"><%= link_to "About Me", root_path %></li>
+            <li class="category"><%= link_to "Portfolio", portfolio_path %></li>
+            <li class="category"><%= link_to "Blog", posts_path %></li>
+            <li class="category"><%= link_to "Contact", contact_path %></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-  </div>
-  <div class="row">
-    <h1>Dayna Lowe</h1>
-    <h3>Web Developer and Designer</h3>
-  </div>
 
-
-<!-- <div id="main_content">
-  <div id="header">
-    <% if current_page?(root_path) %>
-      <p>About</p>
-    <% elsif current_page?(posts_path) %>
-      <p>All Posts</p>
-    <% else %>
-      <p><%= link_to "Back to All Posts", posts_path %></p>
-    <% end  %>
-</div> -->
-
-<!-- <p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p> -->
-<%= yield %>
-
+  <body>
+    <%= yield %>
+  </body>
+</div>
 <footer>
+  <ul class="social">
+    <li>
+      Find Me Here
+    </li>
+    <li class="social"><a href="https://twitter.com/idratherexplode"><img src="assets/twitter-128.png" alt="twitter" class="social"/></a></li>
+    <li class="social"><a href="https://www.behance.net/daynaclowe"><img src="assets/behance-128.png" alt="behance" class="social"/></a></li>
+    <li class="social"><a href="https://github.com/daynaclowe"><img src="assets/github-128.png" alt="github" class="social"/></a></li>
+    <li class="social"><a href="https://flickr.com/robotttology"><img src="assets/flickr-128.png" alt="flickr" class="social"/></a></li>
+    <li class="social"><a href=""><img src="assets/instagram-128.png" alt="instagram" class="social"/></a></li>
+  </ul>
   <ul class="social">
     <li>
       <% if !user_signed_in? %>
@@ -60,10 +54,6 @@
       <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
       <% end %>
     </li>
-    <li class="social"><a href="https://twitter.com/idratherexplode">Twitter</a></li>
-    <li class="social"><a href="">Instagram</a></li>
-    <li class="social"><a href="">Github</a></li>
-    <li class="social"><a href="">Behance</a></li>
   </ul>
 </footer>
 </body>
