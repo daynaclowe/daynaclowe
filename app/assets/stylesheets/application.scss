@@ -79,7 +79,7 @@
 
 body {
   margin-top: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   background-color: #28B698;
   font-family: special_eliteregular;
   font-size: 1.5em;
@@ -107,6 +107,7 @@ p {
 }
 
 footer {
+  display: block;
   background-color: #222222;
   margin-bottom: 0px;
   margin-top: 30px;
@@ -115,6 +116,7 @@ footer {
 li.category {
   padding-top: 8px;
   padding-right: 20px;
+  padding-bottom: 0px;
 }
 
 
@@ -247,11 +249,11 @@ ul.do-icons li {
   text-align: right;
 }
 
-ul.social > li {
+ul.social {
   list-style: none;
   text-align: right;
   display: block;
-  margin: 0px;
+  margin-bottom: 0px;
 }
 
 img.social {
