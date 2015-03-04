@@ -89,13 +89,22 @@
     transform: rotate(-45deg);
 }
 
+img.brand {
+  margin-left: 10px;
+}
+
+li.nav-page:nth-child(3) {
+  margin-right: 50px;
+}
+
 
 body {
   margin-top: 0px;
   margin-bottom: 0px;
   background-color: #ffffff;
   font-family: 'Muli', sans-serif;
-  font-size: 1.5em;
+  background: url("single_bp_bg.png") repeat scroll 0px 0px transparent;
+
 }
 
 h1 {
@@ -118,13 +127,20 @@ h3 {
 p {
   background-color: #B4D8D1;
   font-family: 'Muli', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  padding-bottom: 5px;
 }
 
 .row {
   margin-left: 0px;
   margin-right: 0px;
 }
+
+/*
+* === TIMELINE ===
+*/
+
 
 /*
 * === ABOUT ===
@@ -138,6 +154,11 @@ p {
   height: 600px;
 }
 
+img#triangle {
+  width: 75px;
+  height: relative;
+  z-index: 1;
+}
 h1.name {
   font-family: Oswald;
   font-size: 6.5em;
@@ -168,25 +189,47 @@ img.banner {
   max-width: 1170px;
 }
 
+p.story {
+  width: 50%;
+  min-width: 350px;
+  padding: 0px 20px;
+  margin: 20px auto;
+}
 
 #about {
-  background-color: #ffffff;
 }
 
 
 #name {
 }
 
+h2.story-heading {
+  font-family: Oswald;
+  font-size: 4em;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #262626;
+}
+
+#the-story-so-far {
+  background-color: transparent;
+  margin-bottom: 20px;
+  padding: 0px 5% 0px 5%;
+}
+
+#the-story-so-far p{
+  background-color: transparent;
+}
+
 #who-i-am {
   background-color: #B4D8D1;
-  margin: 0 0 20px 0px;
-  padding-right: 20px;
-  float: right;
+  margin: 0px 0px 20px 0px;
 }
 
 #who-i-am > p{
-  padding-left: 30px;
-  padding-right: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .what-i {
@@ -201,9 +244,9 @@ img.icon {
 
 img#selfie {
   max-height:400px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
+  // -webkit-border-radius: 50%;
+  // -moz-border-radius: 50%;
+  // border-radius: 50%;
   border: none;
   margin-bottom: 20px;
 }
@@ -303,6 +346,7 @@ img.code-skills {
 a {
   color: #ffffff;
   text-decoration: none;
+  font-size: 1.25em;
 }
 
 a:hover {
@@ -347,7 +391,6 @@ img.social {
 */
 
 .parent {
-  // height: 100%;
   border: 5px solid lightcoral;
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -356,16 +399,19 @@ img.social {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: flex-start;
-  justify-content: space-around;
+  align-content: space-around;
 }
 
 .redbox {
+  background-image: url(cat.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: lightblue;
   color: #000000;
-  width: 600px;
-  height: 100px;
-  margin-bottom: 20px;
+  width: 30%;
+  min-width: 350px;
+  height: 400px;
+  margin: 20px auto;
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
@@ -378,7 +424,9 @@ img.social {
 }
 
 p.content {
-  background-color: yellow;
+  background-color: rgba(255,0,0,0.5);
+  width: 100%;
+  text-align: center;
   margin: 0px;
   text-transform: uppercase;
   font-size: 1em;
@@ -391,3 +439,7 @@ p.content {
 // .redbox:nth-child(4) {
 //   order: 2;
 // }
+
+/*
+* === RESPONSIVE TEXT QUERIES ===
+*/

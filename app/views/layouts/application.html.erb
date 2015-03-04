@@ -12,9 +12,9 @@
 <div class="container-fluid">
   <div class="row">
     <div class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img alt="Brand" src="...">
+          <img class="brand" alt="Brand" src="...">
         </a>
         <button class="navbar-toggle" data-toggle="collapse" data-target= ".navHeaderCollapse">
           <span class="icon-bar"></span>
@@ -26,18 +26,16 @@
             <li class="nav-page"><%= link_to "About Me", root_path %></li>
             <li class="nav-page"><%= link_to "Portfolio", portfolio_path %></li>
             <li class="nav-page"><%= link_to "Blog", posts_path %></li>
-            <li class="nav-page"><%= link_to "Contact", contact_path %></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-
+</div>
   <body>
     <%= yield %>
   </body>
-  </div>
-  <div class="container-fluid">
+<div class="container-fluid">
     <footer>
       <ul class="social">
         <li class="social">
@@ -58,5 +56,5 @@
         <li class="social"><a href=""><img src="assets/instagram-128.png" alt="instagram" class="social"/></a></li>
       </ul>
     </footer>
-  </div>
+</div>
 </html>
