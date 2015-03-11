@@ -37,10 +37,7 @@
   </body>
 <div class="container-fluid">
     <footer>
-      <ul class="social">
-        <li class="social">
-          Find Me Here
-        </li>
+      <ul>
         <li class="social">
           <% if !user_signed_in? %>
           <%= link_to "Admin Login", new_user_session_path %>
@@ -48,6 +45,11 @@
           <% if user_signed_in? %>
           <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
           <% end %>
+        </li>
+      </ul>
+      <ul class="social">
+        <li class="social">
+          Find Me Here!
         </li>
         <li class="social"><a href="https://twitter.com/idratherexplode"><img src="assets/twitter-128.png" alt="twitter" class="social"/></a></li>
         <li class="social"><a href="https://www.behance.net/daynaclowe"><img src="assets/behance-128.png" alt="behance" class="social"/></a></li>

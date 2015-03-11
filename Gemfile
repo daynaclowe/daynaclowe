@@ -31,6 +31,7 @@ gem 'bootstrap-sass'
 gem 'devise', '~> 3.4.1'
 
 gem 'simple_form', '~> 3.1.0'
+gem 'mail_form', '~> 1.5.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
