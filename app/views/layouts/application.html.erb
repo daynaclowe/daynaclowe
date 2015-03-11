@@ -13,8 +13,11 @@
   <div class="row">
     <div class="navbar navbar-inverse navbar-static-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img class="brand" alt="Brand" src="...">
+        <a class="navbar-brand">
+          <!-- <img class="brand" alt="Brand" src="assets/logo-2.png"> -->
+        <%= link_to root_path do %>
+          <%= image_tag 'logo-2.png', class: 'navbar-brand'%>
+        <% end %>
         </a>
         <button class="navbar-toggle" data-toggle="collapse" data-target= ".navHeaderCollapse">
           <span class="icon-bar"></span>
@@ -23,7 +26,7 @@
         </button>
         <div class="collapse navbar-collapse navHeaderCollapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="nav-page"><%= link_to "About Me", root_path %></li>
+            <li class="nav-page"><%= link_to " ", root_path %></li>
             <li class="nav-page"><%= link_to "Portfolio", portfolio_path %></li>
             <li class="nav-page"><%= link_to "Blog", posts_path %></li>
           </ul>
@@ -37,8 +40,8 @@
   </body>
 <div class="container-fluid">
     <footer>
-      <ul>
-        <li class="social">
+      <!-- <ul>
+        <li>
           <% if !user_signed_in? %>
           <%= link_to "Admin Login", new_user_session_path %>
           <% end %>
@@ -46,10 +49,10 @@
           <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
           <% end %>
         </li>
-      </ul>
+      </ul> -->
       <ul class="social">
         <li class="social">
-          Find Me Here!
+          Icons, design and photography by Dayna Lowe.
         </li>
         <li class="social"><a href="https://twitter.com/idratherexplode"><img src="assets/twitter-128.png" alt="twitter" class="social"/></a></li>
         <li class="social"><a href="https://www.behance.net/daynaclowe"><img src="assets/behance-128.png" alt="behance" class="social"/></a></li>
