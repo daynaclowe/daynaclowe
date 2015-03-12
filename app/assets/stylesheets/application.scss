@@ -14,8 +14,16 @@
  *= require_self
  */
 @import 'normalize';
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+$dark-grey: #262626;
+$light-grey: #434343;
+$yellow: #FFCF0B;
+
+$font-head: 'Oswald', sans-serif;
+$font-sub: special_eliteregular;
+$font-body: 'Muli', sans-serif;
 
 /*
 * === BOOTSTRAP GRID ===
@@ -63,7 +71,7 @@
 */
 
 .navbar {
-  background-color: #262626;
+  background-color: $dark-grey;
   min-height: 100px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -139,36 +147,36 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
   background-color: #ffffff;
-  font-family: 'Muli', sans-serif;
+  font-family: $font-body;
   background: url("single_bp_bg.png") repeat scroll 0px 0px transparent;
 
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-head;
   font-size: 5em;
   text-transform: uppercase;
   margin: 0 auto;
 }
 
 h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-head;
   font-size: 4em;
 }
 
 h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-head;
 }
 
 p {
-  font-family: 'Muli', sans-serif;
+  font-family: $font-body;
   font-size: 1.25em;
   line-height: 1.25em;
   padding-bottom: 5px;
 }
 
 li {
-  font-family: 'Muli', sans-serif;
+  font-family: $font-body;
   font-size: 1.25em;
   line-height: 1.25em;
   list-style-type: none;
@@ -188,7 +196,7 @@ li {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: #FFCF0B;
+  background-color: $yellow;
   position: relative;
 }
 .progress-pie-chart.gt-50 {
@@ -241,7 +249,7 @@ li {
   display: block;
   font-family: Oswald;
   font-size: 2em;
-  color: #262626;
+  color: $dark-grey;
   background-color: transparent;
   margin: auto;
   padding: 0px;
@@ -263,7 +271,7 @@ li {
 */
 
 .heading {
-  background-color: #262626;
+  background-color: $dark-grey;
   background-image: url(cover-grey.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -281,11 +289,11 @@ h1.name {
   font-size: 6.5em;
   padding-top: 150px;
   text-align: center;
-  color: #ffcf0b;
+  color: $yellow;
 }
 
 h3.title {
-  font-family: special_eliteregular;
+  font-family: $font-sub;
   font-size: 3em;
   padding-top: 15px;
   margin: 0;
@@ -294,7 +302,7 @@ h3.title {
 }
 
 h2.sub-title {
-  font-family: special_eliteregular;
+  font-family: $font-sub;
   font-size: 2em;
   padding-top: 15px;
   margin: 0;
@@ -324,7 +332,7 @@ img.banner {
   left: 18px;
   height: 100%;
   width: 4px;
-  background: #434343;
+  background: $light-grey;
   top: 50%;
     left: 50%;
     margin-right: -50%;
@@ -376,7 +384,7 @@ h2.story-heading {
   margin-top: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: #262626;
+  color: $dark-grey;
 }
 
 
@@ -391,7 +399,7 @@ h2.story-heading {
 
 .skills{
   min-height: 600px;
-  background-color: #262626;
+  background-color: $dark-grey;
   text-align: center;
   display: -webkit-flexbox;
     display: -ms-flexbox;
@@ -417,7 +425,7 @@ h2.story-heading {
   max-height: 400px;
   text-align: center;
   padding: 40px 40px 20px;
-  border: 3px solid #434343;
+  border: 3px solid $light-grey;
   margin: 50px auto;
 }
 
@@ -427,14 +435,14 @@ h2.story-heading {
 
 .toolkit ul, li {
   padding-left: 0px;
-  font-family: "Muli",sans-serif;
+  font-family: $font-body;
   padding-bottom: 5px;
 
 }
 
 .toolkit h3 {
-  color: #FFCF0B;
-  font-family: 'Oswald', sans-serif;
+  color: $yellow;
+  font-family: $font-head;
   font-size: 2.5em;
   text-transform: uppercase;
   text-align: center;
@@ -511,7 +519,7 @@ left:-33px;
 }
 
 a.mail {
-  color: #262626;
+  color: $dark-grey;
 }
 
 .about {
@@ -537,11 +545,11 @@ img#selfie {
 
 a.detail {
   font-size: 1em;
-  color: #434343;
+  color: $light-grey;
 }
 
 a.detail:hover {
-  color: #FFCF0B;
+  color: $yellow;
 }
 
 /*
