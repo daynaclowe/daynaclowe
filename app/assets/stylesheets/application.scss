@@ -377,6 +377,77 @@ p.story {
   background: #fff;
 }
 
+.line {
+  display: inline;
+  width: 50%;
+  height:3px;
+  background-color: $dark-grey;
+  float: right;
+  z-index: -1;
+  margin-top: -125px;
+}
+
+.line-left  {
+  display: inline;
+  width: 50%;
+  height:3px;
+  background-color: $dark-grey;
+  float: left;
+  z-index: -1;
+  margin-top: -125px;
+}
+
+.time-circle {
+  margin-top: 90px;
+  margin-left: -52px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 0 5px $dark-grey;
+  background: #fff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.time-circle-right {
+  float: right;
+  margin-top: 90px;
+  margin-right: -52px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 0 5px $dark-grey;
+  background: #fff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  z-index: 9999;
+}
+
+p.time {
+  font-family: $font-body;
+  font-size: 2em;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  padding-top: 36px;
+  line-height: 1em;
+}
+
+.time-left {
+  float: right;
+  margin-top: 90px;
+  margin-left: 52px;
+  z-index: 9999;
+  width: 100px;
+  height: 100px;
+  background: #fff; 
+  -moz-border-radius: 70px; 
+  -webkit-border-radius: 70px; 
+  border-radius: 70px;
+}
+
+
 
 h2.story-heading {
   font-family: Oswald;
@@ -663,7 +734,9 @@ img.code-skills {
 a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1em;
+  font-family: $font-body;
+  font-weight: 400;
 }
 
 a:hover {
@@ -789,6 +862,9 @@ p.content {
         #timeline:before {
                 background: transparent;
               }
+        .line, .line-left {
+          background: transparent;
+        }
 
     }
 
