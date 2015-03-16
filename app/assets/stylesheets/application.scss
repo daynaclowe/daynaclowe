@@ -408,11 +408,15 @@ p.story {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+  text-align: center;
+  font-family: $font-body;
+  font-size: 2em;
+  padding-top: 1em;
 }
 
 .time-circle-right {
   float: right;
-  margin-top: 90px;
+  margin-top: 122px;
   margin-right: -52px;
   position: relative;
   width: 100px;
@@ -423,31 +427,11 @@ p.story {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   z-index: 9999;
-}
-
-p.time {
+  text-align: center;
   font-family: $font-body;
   font-size: 2em;
-  margin-left: 10px;
-  margin-bottom: 0px;
-  padding-top: 36px;
-  line-height: 1em;
+  padding-top: 1em;
 }
-
-.time-left {
-  float: right;
-  margin-top: 90px;
-  margin-left: 52px;
-  z-index: 9999;
-  width: 100px;
-  height: 100px;
-  background: #fff; 
-  -moz-border-radius: 70px; 
-  -webkit-border-radius: 70px; 
-  border-radius: 70px;
-}
-
-
 
 h2.story-heading {
   font-family: Oswald;
@@ -855,6 +839,13 @@ p.content {
         .about {
                 float: initial;
               }
+        .time-circle {
+          display: none;
+        }
+        .time-circle-right {
+          display: none;
+        }
+
     }
 
     /* Small Devices, Tablets */
